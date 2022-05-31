@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 0abca0ee8e170eb478f5b8445478a698
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nclass PlayerManager extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Start() {\\r\\n    }\\r\\n   
+    FindPlayer() {\\r\\n        this.player = UnityEngine_1.GameObject.FindObjectOfType($typeof(UnityEngine_1.CharacterController));\\r\\n   
+    }\\r\\n    Update() {\\r\\n        if (!this.player) {\\r\\n            this.FindPlayer();\\r\\n           
+    return;\\r\\n        }\\r\\n        if (!this.CheckAlive())\\r\\n           
+    this.RespawnPlayer();\\r\\n    }\\r\\n    CheckAlive() {\\r\\n        // -10
+    \uFFFD\u01B7\uFFFD\uFFFD\uFFFD \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD
+    \uFFFD\uFFFD\uFFFD\xF3\uFFFD\uFFFD\\r\\n        return this.player.transform.position.y
+    > -10;\\r\\n    }\\r\\n    RespawnPlayer() {\\r\\n        this.player.enabled
+    = false;\\r\\n        this.player.transform.position = this.respawnPosition.transform.position;\\r\\n       
+    this.player.enabled = true;\\r\\n    }\\r\\n}\\r\\nexports.default = PlayerManager;\\r\\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyTWFuYWdlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBsYXllck1hbmFnZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkNBQThEO0FBRzlELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFLNUQsS0FBSztJQUVMLENBQUM7SUFFRCxVQUFVO1FBRU4sSUFBSSxDQUFDLE1BQU0sR0FBRyx3QkFBVSxDQUFDLGdCQUFnQixTQUFDLGlDQUFtQixFQUFHLENBQUM7SUFDckUsQ0FBQztJQUVELE1BQU07UUFFRixJQUFJLENBQUMsSUFBSSxDQUFDLE1BQU0sRUFDaEI7WUFDSSxJQUFJLENBQUMsVUFBVSxFQUFFLENBQUM7WUFDbEIsT0FBTztTQUNWO1FBRUQsSUFBSSxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUU7WUFBRSxJQUFJLENBQUMsYUFBYSxFQUFFLENBQUM7SUFDakQsQ0FBQztJQUVELFVBQVU7UUFFTiw0QkFBNEI7UUFDNUIsT0FBTyxJQUFJLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFBO0lBQ2pELENBQUM7SUFFRCxhQUFhO1FBRVQsSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO1FBQzVCLElBQUksQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUMsZUFBZSxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUM7UUFDekUsSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDO0lBQy9CLENBQUM7Q0FDSjtBQXJDRCxnQ0FxQ0MifQ==\",\"assetPath\":\"Assets/PlayerManager.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"UnityEngine.PhysicsModule\",\"name\":\"player\",\"type\":\"UnityEngine.CharacterController\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"respawnPosition\",\"type\":\"UnityEngine.GameObject\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"PlayerManager\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: b5e791020e9986590c2ddac101e9ba92

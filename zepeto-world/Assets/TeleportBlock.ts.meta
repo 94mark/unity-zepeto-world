@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 8e48f272c97e95e4dbd7282696447e3d
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    TeleportBlock extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n    }\r\n    OnTriggerEnter(obj) {\r\n        console.log(obj.name);\r\n       
+    this.Teleport(obj.gameObject);\r\n    }\r\n    Teleport(obj) {\r\n        obj.transform.position
+    = this.teleportPos.transform.position;\r\n    }\r\n}\r\nexports.default = TeleportBlock;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVsZXBvcnRCbG9jay5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRlbGVwb3J0QmxvY2sudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFHckQsTUFBcUIsYUFBYyxTQUFRLHFDQUFxQjtJQUk1RCxLQUFLO0lBRUwsQ0FBQztJQUVELGNBQWMsQ0FBQyxHQUFZO1FBRXZCLE9BQU8sQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxDQUFBO1FBQ3JCLElBQUksQ0FBQyxRQUFRLENBQUMsR0FBRyxDQUFDLFVBQVUsQ0FBQyxDQUFBO0lBQ2pDLENBQUM7SUFDRCxRQUFRLENBQUMsR0FBZTtRQUVwQixHQUFHLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUM7SUFDakUsQ0FBQztDQUNKO0FBakJELGdDQWlCQyJ9","assetPath":"Assets/TeleportBlock.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"teleportPos","type":"UnityEngine.GameObject","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"TeleportBlock","description":""},"isCompiled":true}'
+  typescriptHash: 9665d1625e43bf6ef446ff1ead67f758
